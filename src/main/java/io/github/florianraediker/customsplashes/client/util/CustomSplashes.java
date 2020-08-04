@@ -2,6 +2,7 @@ package io.github.florianraediker.customsplashes.client.util;
 
 import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
+import com.google.gson.JsonParseException;
 import com.google.gson.JsonSyntaxException;
 import io.github.florianraediker.customsplashes.client.util.splash.ReducedCalendar;
 import io.github.florianraediker.customsplashes.client.util.splash.SplashList;
@@ -80,7 +81,7 @@ public class CustomSplashes extends Splashes {
                     ) {
                         jsonData = JSONUtils.fromJson(reader);
                         jsonSplashList = SplashList.fromJSON(mod.getModId(), jsonData);
-                    } catch (IOException e) {
+                    } catch (IOException | JsonParseException e) {
                         LOGGER.error("Could not parse " + mod.getModId() + ":texts/splashes.json", e);
                     }
                 } else {
