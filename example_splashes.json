@@ -1,0 +1,25 @@
+{
+    "remove": {
+        "minecraft": [
+            "OOoooOOOoo! Spooky!"
+        ],
+        "some_domain": "*"
+    },
+    "splashes": [
+        "Some Splash",
+        "EXAMPLE!",
+        {
+            "is_exclusive": true,
+            "date": {"month": "nov", "date": "18"},
+            "splash": "Happy birthday, Minecraft!"
+        },
+        {
+            "date": {"month": "nov", "date": "19"},
+            "splash": "Minecraft was released yesterday (a few years ago)!"
+        },
+        {
+            "translated": true,
+            "splash": "This splash will be translated!"
+        }
+    ]
+}
