@@ -18,7 +18,7 @@ version="${file.jarVersion}" #mandatory
  # A display name for the mod
 displayName="SplashLoader" #mandatory
 # A URL to query for updates for this mod. See the JSON update specification <here>
-#updateJSONURL="http://myurl.me/" #optional
+updateJSONURL="https://florianraediker.github.io/SplashLoader/update.json" #optional
 # A URL for the "homepage" for this mod, displayed in the mod UI
 displayURL="https://github.com/FlorianRaediker/SplashLoader" #optional
 # A file name (in the root of the mod JAR) containing a logo for display
@@ -30,7 +30,7 @@ authors="Florian Rädiker" #optional
 # The description text for the mod (multi line!) (#mandatory)
 description='''
 SplashLoader loads splash texts from any domain. That is, all assets/*/texts/splashes.txt files are merged so that mods can add their own splashes.
-In addition, splash texts can be added to a splashes.json file, which allows you to specify further properties of the splash texts, such as
+In addition, splash texts can be added to a splashes.json file which allows you to specify further properties of the splash texts such as
  • Translate certain splash texts
  • Show splash texts only on a certain day, next to the "normal" splash texts
  • Show only certain splash texts on a specific day (like Minecraft's "Merry X-mas!", "Happy new year!" and "OOoooOOOoo! Spooky!")
